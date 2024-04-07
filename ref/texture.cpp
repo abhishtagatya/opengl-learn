@@ -16,16 +16,16 @@
 
 // Vertices coordinates
 GLfloat vertices[] = { //     COORDINATES     /        COLORS      /   TexCoord  //
-                -0.5f, -0.5f, 0.0f,     1.0f, 0.0f, 0.0f,       0.0f, 0.0f,       // Lower left corner
-                -0.5f,  0.5f, 0.0f,     0.0f, 1.0f, 0.0f,    0.0f, 1.0f,      // Upper left corner
-                0.5f,  0.5f, 0.0f,    0.0f, 0.0f, 1.0f,    1.0f, 1.0f,// Upper right corner
-                0.5f, -0.5f, 0.0f,    1.0f, 1.0f, 1.0f,   1.0f, 0.0f,// Lower right corner
+        -0.5f, -0.5f, 0.0f,     1.0f, 0.0f, 0.0f,       0.0f, 0.0f,       // Lower left corner
+        -0.5f,  0.5f, 0.0f,     0.0f, 1.0f, 0.0f,    0.0f, 1.0f,      // Upper left corner
+        0.5f,  0.5f, 0.0f,    0.0f, 0.0f, 1.0f,    1.0f, 1.0f,// Upper right corner
+        0.5f, -0.5f, 0.0f,    1.0f, 1.0f, 1.0f,   1.0f, 0.0f,// Lower right corner
 };
 
 // Indices for vertices order
 GLuint indices[] = {
-                0, 2, 1, // Upper triangle
-                0, 3, 2 // Lower triangle
+        0, 2, 1, // Upper triangle
+        0, 3, 2 // Lower triangle
 };
 
 const unsigned int SCR_WIDTH = 400;
@@ -33,7 +33,7 @@ const unsigned int SCR_HEIGHT = 400;
 int main()
 {
 
-	glfwInit();
+    glfwInit();
 
     // Window Hints
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
@@ -102,6 +102,6 @@ int main()
 
     // Destroy the Window
     glfwDestroyWindow(window);
-	glfwTerminate();
-	return 0;
+    glfwTerminate();
+    return 0;
 }
