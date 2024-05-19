@@ -51,7 +51,7 @@ const unsigned int SCR_HEIGHT = 800;
 int main()
 {
 
-	glfwInit();
+    glfwInit();
 
     // Window Hints
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
@@ -135,6 +135,6 @@ int main()
 
     // Destroy the Window
     glfwDestroyWindow(window);
-	glfwTerminate();
-	return 0;
+    glfwTerminate();
+    return 0;
 }
